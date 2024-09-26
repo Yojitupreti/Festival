@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Album</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Album Container -->
+    <div class="album-container">
+        <!-- Front Cover -->
+        <div class="page cover" id="cover-front">
+            <h1>पर्व एल्बम </h1>
+            <p>पर्वहरूको अन्वेषण</p>
+            <button class="turn-page" onclick="turnPage(1)">Open Album</button>
+        </div>
+
+        <!-- Page 1: Dashain Festival -->
+        <div class="page" id="page-1">
+            <h2> दशैं पर्व को शुभकामना  </h2>
+            <video id="video1" width="300" controls>
+                <source src="das.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="turn-page" onclick="turnPage(2)">Next</button>
+        </div>
+
+        <!-- Page 2: Tihar Festival -->
+        <div class="page" id="page-2">
+            <h2>तिहार पर्व को शुभकामना </h2>
+            <video id="video2" width="300" controls>
+                <source src="tihar.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="turn-page" onclick="turnPage(3)">Next</button>
+            <button class="turn-page" onclick="turnPage(1)">Previous</button>
+        </div>
+
+        <!-- Page 3: Chhath Festival -->
+        <div class="page" id="page-3">
+            <h2>छठ पर्व को शुभकामना </h2>
+            <video id="video3" width="300" controls>
+                <source src="chath.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="turn-page" onclick="turnPage(2)">Previous</button>
+            <button class="turn-page" onclick="turnPage(4)">End Album</button>
+        </div>
+
+        <!-- Back Cover -->
+        <div class="page cover" id="cover-back">
+            <h1>दशैंको प्रेम, तिहारको उज्यालो, र छठको सूर्यको आशिर्वाद सँगै सधैं रहोस्!</h1>
+            <button class="turn-page" onclick="turnPage(3)">Go Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
